@@ -1,6 +1,8 @@
 # Scopes
 
-Scope is a simple construct that enables some interesting and helpful behavior in a TornadoFX application.
+Scope is a simple construct that enables some interesting and helpful behavior in a TornadoFX application. A scope can be thought of as a context in which you want to be able to share a subset of data between a group of components.
+
+![alttext](https://github.com/ahinchman1/TornadoFX-DnD-TilesFX/blob/master/Untitled%20Diagram.png)
 
 When you use `inject()` or `find()` to locate a `Controller` or a `View`, you will by default get back a singleton instance, meaning that wherever you locate that object in your code, you will get back the same instance. Scopes provide a way to make a `View` or `Controller` unique to a smaller subset of instances in your application.
 
